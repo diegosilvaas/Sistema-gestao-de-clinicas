@@ -1,3 +1,6 @@
+<?php
+require_once 'Config.php'; 
+?>
 <!DOCTYPE html>
 
 
@@ -122,8 +125,8 @@
                           <th>Cliente</th>
                           <th>Procedimento</th>
                           <th>Esteticista </th>
-                          <th>Status</th>
-                          <th>Actions</th>
+                          <th>DIa / Horário</th>
+                          <th>Ações</th>
                         </tr>
                       </thead>
                       <tbody class="table-border-bottom-0">
