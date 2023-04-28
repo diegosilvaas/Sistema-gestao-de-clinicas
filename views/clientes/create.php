@@ -48,28 +48,363 @@
                                    </div>
 
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-phone">telefone</label>
-                                       <input name="telefone" type="number" id="basic-default-phone" class="form-control phone-mask" placeholder="658 799 8941">
+                                       <label class="form-label" for="basic-default-phone">Data de nascimento</label>
+                                       <input name="data_nascimento" type="number" id="basic-default-phone" class="form-control phone-mask" placeholder="06 02 1996">
                                    </div>
 
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-company">e-mail</label>
-                                       <input name="email" type="email" class="form-control" id="basic-default-company">
+                                       <label class="form-label" for="basic-default-company">telefone</label>
+                                       <input name="telefone" type="number" class="form-control" id="basic-default-company">
                                    </div>
 
 
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-message">Endereço</label>
-                                       <input name="endereco" type="text" class="form-control" id="basic-default-company">
+                                       <label class="form-label" for="basic-default-message">Queixa principal</label>
+                                       <input name="queixa_principal" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Já realizou alguma cirurgia?</label>
+                                       <input name="realizou_cirurgia" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Toma algum remédio? Qual?</label>
+                                       <input name="toma_remedio" type="text" class="form-control" id="basic-default-company">
 
                                    </div>
 
                                    <div class="mb-3">
-                                       <label for="exampleFormControlSelect1" class="form-label">Status</label>
+                                       <label class="form-label" for="basic-default-message">Toma anticoncepcional?</label>
+                                       <input name="toma_anticoncepcional" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Está fazendo algum tratamento médico?</label>
+                                       <input name="tratamento_medico" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Tem hipo/Hipertensão arterial?</label>
+                                       <input name="hipo_arterial" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui algum problema cardíaco?</label>
+                                       <input name="cardiaco" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui algum disturbio hormonal?</label>
+                                       <input name="disturbio_hormonal" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui algum disturbio circulatório?</label>
+                                       <input name="disturbio_circulatorio" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui alguma doença de pele?</label>
+                                       <input name="doenca_pele" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Ingere álcool? Com que frequência?</label>
+                                       <input name="ingere_alcool" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Diabetes?</label>
+                                       <input name="diabetes" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Gostaria de mencionar algum quadro de saude?</label>
+                                       <input name="quadro_saude" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Está gestante?</label>
+                                       <input name="gestante" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Pratica atividade fisica? Qual?</label>
+                                       <input name="atividade_fisica" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Alimentação balanceada?</label>
+                                       <input name="alimentacao_balanceada" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Ingestão diária de água?</label>
+                                       <input name="ingestao_agua" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Funcionamento intestinal? </label>
+                                       <input name="funcionamento_intestinal" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Ciclo mestrual?</label>
+                                       <input name="ciclo_mestrual" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui marcapasso?</label>
+                                       <input name="possui_marcapasso" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui varizes?</label>
+                                       <input name="possui_varizes" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Usa algum cosmético corporal/facial?</label>
+                                       <input name="cosmetico_corporal" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Histórico de epilepsia?</label>
+                                       <input name="epilepsia" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Cicatriz?</label>
+                                       <input name="cicatriz" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Já engravidou? Quantas vezes?</label>
+                                       <input name="engravidou" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui alguma protese metálica? </label>
+                                       <input name="protese_metalica" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">É fumante? </label>
+                                       <input name="fumante" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Já teve câncer? </label>
+                                       <input name="cancer" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Utiliza lentes de contato? </label>
+                                       <input name="lente_contato" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Fica exposta ao sol? </label>
+                                       <input name="exposicao_sol" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Utiliza filtro solar? </label>
+                                       <input name="filtro_solar" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Está no período mestrual? </label>
+                                       <input name="perido_mestrual" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+                                   <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Costuma dormir quantas horas por noite? </label>
+                                       <input name="sono" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+
+
+
+                                   <div class="col-md">
+                                   <h5 class="card-header">Oleosidade</h5>
+                          <div class="form-check form-check-inline mt-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Alípica</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Lipídica</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Normal</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">Seborreica</label>
+                          </div>
+
+
+                          <div class="col-md">
+                                   <h5 class="card-header">Espessura da pele</h5>
+                          <div class="form-check form-check-inline mt-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Espessa</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Fina</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Muito fina</label>
+                          </div>
+
+
+
+
+                          <div class="col-md">
+                                   <h5 class="card-header">Grau de acne</h5>
+                          <div class="form-check form-check-inline mt-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">I</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">II</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">III</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">IV</label>
+                          </div>
+
+
+
+
+
+
+
+                          <div class="col-md">
+                                   <h5 class="card-header">Hidratação</h5>
+                          <div class="form-check form-check-inline mt-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Desidratada</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Normal</label>
+                          </div>
+
+
+
+
+                          <div class="col-md">
+                                   <h5 class="card-header">Fototipo</h5>
+                          <div class="form-check form-check-inline mt-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">I</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">II</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">III</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">IV</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                            <label class="form-check-label" for="inlineCheckbox5">V</label>
+                          </div>
+
+                          <div class="mb-3">
+                                       <label class="form-label" for="basic-default-message">Possui manchas? Onde? </label>
+                                       <input name="manchas" type="text" class="form-control" id="basic-default-company">
+
+                                   </div>
+
+
+
+                          <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Orientações à paciente</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      
+                       
+
+
+                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   <div class="mb-3">
+                                       <label for="exampleFormControlSelect1" class="form-label">Anamnese</label>
                                        <select name='status' class="form-select" id="exampleFormControlSelect1">
 
-                                           <option value="inativo">inativo</option>
-                                           <option selected value="ativo">ativo</option>  <!--  forçando ficar selecionado -->//
+                                           <option value="inativo">Corporal</option>
+                                           <option selected value="ativo">Facial</option>  <!--  forçando ficar selecionado -->//
 
 
                                        </select>
@@ -78,28 +413,28 @@
                                    <button type="submit" name="btncadastrar" class="btn btn-primary">cadastrar</button>
                                </form>
                                <?php
-                               if(isset($_POST['btncadastrar'])) {
-                                   $name = $_POST['nome'];
-                                   $telephone = $_POST['telefone'];
-                                   $email = $_POST['email'];
-                                   $address = $_POST['endereco'];
-                                   $status = $_POST['status'];
+                            //    if(isset($_POST['btncadastrar'])) {
+                            //        $name = $_POST['nome'];
+                            //        $telephone = $_POST['telefone'];
+                            //        $email = $_POST['email'];
+                            //        $address = $_POST['endereco'];
+                            //        $status = $_POST['status'];
 
 
-                                   $db = new PDO("mysql:dbname=clinica_estetica  ;host=localhost", 'root', '');
-                                   $sql = "insert into clientes (nome, telefone, email, endereco, status) values ('$name', $telephone, '$email', '$address', '$status')";
-                                   $stmt = $db->prepare($sql);
+                            //        $db = new PDO("mysql:dbname=clinica_estetica  ;host=localhost", 'root', '');
+                            //        $sql = "insert into clientes (nome, telefone, email, endereco, status) values ('$name', $telephone, '$email', '$address', '$status')";
+                            //        $stmt = $db->prepare($sql);
 
-                                   if ($stmt->execute()) {
-                                       echo 'Cliente cadastrado com sucesso';
+                            //        if ($stmt->execute()) {
+                            //            echo 'Cliente cadastrado com sucesso';
 
-                                   } else {
-                                       echo 'Erro ao cadastrar cliente';
-                                   }
+                            //        } else {
+                            //            echo 'Erro ao cadastrar cliente';
+                            //        }
 
 
 
-                               }
+                            //    }
 
 
                                ?>
