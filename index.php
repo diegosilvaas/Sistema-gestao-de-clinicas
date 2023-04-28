@@ -119,9 +119,9 @@
                     <table class="table table-dark">
                       <thead>
                         <tr>
-                          <th>Project</th>
-                          <th>Client</th>
-                          <th>Users</th>
+                          <th>Cliente</th>
+                          <th>Procedimento</th>
+                          <th>Esteticista </th>
                           <th>Status</th>
                           <th>Actions</th>
                         </tr>
