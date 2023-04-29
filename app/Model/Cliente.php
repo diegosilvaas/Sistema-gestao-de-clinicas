@@ -35,12 +35,26 @@ class Cliente {
     public $protese_metalica;
     public $fumante;
     public $cancer;
+    public $lente_contato;
+    public $exposicao_sol;
+    public $filtro_solar;
+    public $periodo_mestrual;
+    public $sono;
+    public $oleosidade;
+    public $espessura_pele;
+    public $grau_acne;
+    public $hidratacao_pele;
+    public $fototipo;
+    public $manchas;
+    public $orientacoes;
+    public $anamnese;
+
     
 
 
     public function cadastrarCliente()
     {
-        
+
     }
 
 
