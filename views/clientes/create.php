@@ -266,19 +266,19 @@
                                    <div class="col-md">
                                    <h5 class="card-header">Oleosidade</h5>
                           <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="aliptica">
                             <label class="form-check-label" for="inlineCheckbox1">Alípica</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="lipidica">
                             <label class="form-check-label" for="inlineCheckbox2">Lipídica</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="normal">
                             <label class="form-check-label" for="inlineCheckbox3">Normal</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="seborreica">
                             <label class="form-check-label" for="inlineCheckbox4">Seborreica</label>
                           </div>
 
@@ -286,15 +286,15 @@
                           <div class="col-md">
                                    <h5 class="card-header">Espessura da pele</h5>
                           <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="espessa">
                             <label class="form-check-label" for="inlineCheckbox1">Espessa</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="fina">
                             <label class="form-check-label" for="inlineCheckbox2">Fina</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="muito fina">
                             <label class="form-check-label" for="inlineCheckbox3">Muito fina</label>
                           </div>
 
@@ -304,19 +304,19 @@
                           <div class="col-md">
                                    <h5 class="card-header">Grau de acne</h5>
                           <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="I">
                             <label class="form-check-label" for="inlineCheckbox1">I</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="II">
                             <label class="form-check-label" for="inlineCheckbox2">II</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="III">
                             <label class="form-check-label" for="inlineCheckbox3">III</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="IV">
                             <label class="form-check-label" for="inlineCheckbox4">IV</label>
                           </div>
 
@@ -329,11 +329,11 @@
                           <div class="col-md">
                                    <h5 class="card-header">Hidratação</h5>
                           <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="desidradatada">
                             <label class="form-check-label" for="inlineCheckbox1">Desidratada</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="normal">
                             <label class="form-check-label" for="inlineCheckbox2">Normal</label>
                           </div>
 
@@ -343,23 +343,23 @@
                           <div class="col-md">
                                    <h5 class="card-header">Fototipo</h5>
                           <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="I">
                             <label class="form-check-label" for="inlineCheckbox1">I</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="II">
                             <label class="form-check-label" for="inlineCheckbox2">II</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="III">
                             <label class="form-check-label" for="inlineCheckbox3">III</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="IV">
                             <label class="form-check-label" for="inlineCheckbox4">IV</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="V">
                             <label class="form-check-label" for="inlineCheckbox5">V</label>
                           </div>
 
