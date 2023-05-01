@@ -32,9 +32,14 @@
                 <div class='container-xxl flex-grow-1 container-p-y'>
                     <div class="card">
 
+                    
                         <h5 class="card-header" >
                             <a href="create.php" class="btn btn-success btn-sm" title="cadastrar novo cliente"><i class="bx bx-plus-medical"></i></a>
                             Clientes cadastrados</h5>
+                            
+                            <div class="container-fluid">
+                             <div class="row">
+                                
                         <div class="table-responsive text-nowrap">
                             <table class="table table-dark">
                                 <thead>
@@ -48,6 +53,12 @@
                                 </tr>
                                 </thead>
                                 <tbody class="table-border-bottom-0">
+                                </div>
+                                </div>
+
+
+
+                                
                                 <?php
                                 $db = new PDO("mysql:dbname=sistemadeproduto;host=localhost", 'root', '');
                                 $sql = 'select * from clientes';
@@ -79,6 +90,7 @@
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class='bx bx-low-vision'></i> Visualizar</a>
                                                 <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Editar</a>
                                                 <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Excluir</a>
                                             </div>
