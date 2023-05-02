@@ -46,11 +46,11 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Titulo</label>
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Forma de pagamento</label>
                           <div class="col-sm-10">
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-company2" class="input-group-text"><i class='bx bx-money'></i></i></span>
-                              <input type="text" id="basic-icon-default-company" class="form-control" placeholder="PIX/ Dinheiro / Cartão" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2">
+                              <input type="number" id="basic-icon-default-company" class="form-control" placeholder="PIX/ Dinheiro / Cartão" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2">
                             </div>
                           </div>
                         </div>
@@ -59,8 +59,8 @@
                           <div class="col-sm-10">
                             <div class="input-group input-group-merge">
                               <span class="input-group-text"><i class='bx bxs-calendar-heart'></i></span>
-                              <input type="text" id="basic-icon-default-email" class="form-control" placeholder="10/01/2020" aria-label="john.doe" aria-describedby="basic-icon-default-email2">
-                              <span id="basic-icon-default-email2" class="input-group-text">10/01/2020</span>
+                              <input type="date" id="basic-icon-default-email" class="form-control" placeholder="10/01/2020" aria-label="john.doe" aria-describedby="basic-icon-default-email2">
+                             
                             </div>
                             
 
