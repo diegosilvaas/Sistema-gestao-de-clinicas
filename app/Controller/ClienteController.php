@@ -1,8 +1,6 @@
 <?php
-// include_once 'app/Model/Cliente.php';
-// spl_autoload_register(function($class_name){
-//     include_once '../Model/' . $class_name . '.php';
-// });
+
+include_once 'C:\xampp\htdocs\Sistema-gestao-de-clinica\app\Model\Cliente.php';
 
 class ClienteController
 {
@@ -10,10 +8,11 @@ class ClienteController
     private $dados;
     private $clienteRepository;
 
-    public function __construct($cliente)
-    {
+    public function __construct()
+    { 
+     
         $this->pegaDadosFormulario();
-        $this->clienteRepository = $cliente;
+        $this->clienteRepository = new Cliente();
     }
 
 
@@ -38,8 +37,10 @@ class ClienteController
         $this->clienteRepository->setQuadro_saude($this->dados['quadro_saude']);
         $this->clienteRepository->setGestante($this->dados['gestante']);
         $this->clienteRepository->setAtividade_fisica($this->dados['atividade_fisica']);
+        $this->clienteRepository->setAlimentacao_balanceada($this->dados['alimentacao_balanceada']);
         $this->clienteRepository->setIngestao_agua($this->dados['ingestao_agua']);
         $this->clienteRepository->setFuncionamento_intestinal($this->dados['funcionamento_intestinal']);
+        $this->clienteRepository->setCiclo_mestrual($this->dados['ciclo_mestrual']);
         $this->clienteRepository->setPossui_marcapasso($this->dados['possui_marcapasso']);
         $this->clienteRepository->setPossui_varizes($this->dados['possui_varizes']);
         $this->clienteRepository->setCosmetico_corporal($this->dados['cosmetico_corporal']);
@@ -62,9 +63,9 @@ class ClienteController
         $this->clienteRepository->setManchas($this->dados['manchas']);
         $this->clienteRepository->setOrientacoes($this->dados['orientacoes']);
         $this->clienteRepository->setAnamnese($this->dados['anamnese']);
-
-        return $this->clienteRepository->cadastrarCliente();
-
+  
+        $this->clienteRepository->cadastrarCliente();
+        return true;
 
     }
     
@@ -77,5 +78,18 @@ class ClienteController
         }
 
         $this->dados = [];
+    }
+
+
+    public function listarClientes()
+    {
+        return $this->clienteRepository->listarClientes();
+
+    }
+
+    public function visualizarCliente($id)
+    {
+        return $this->clienteRepository->visualizarCliente($id);
+
     }
 }
