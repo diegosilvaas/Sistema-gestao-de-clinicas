@@ -1,3 +1,8 @@
+<?php
+
+require_once '../../app/Controller/ClienteController.php';
+?>
+
 <!DOCTYPE html>
 <html
         lang="en"
@@ -46,51 +51,39 @@
                                 <tr>
                                     <th>Nome</th>
                                     <th>Telefone</th>
-                                    <th>e-mail</th>
-                                    <th>endereço</th>
-                                    <th>Status</th>
+                                    <th>Data de nascimento</th>
+                                    <th>Anamnese</th>
+                                    <th>Queixa Principal</th>
                                     <th>Ações</th>
                                 </tr>
                                 </thead>
                                 <tbody class="table-border-bottom-0">
-                                </div>
-                                </div>
+                              
 
 
 
                                 
                                 <?php
-                                $db = new PDO("mysql:dbname=sistemadeproduto;host=localhost", 'root', '');
-                                $sql = 'select * from clientes';
-                                $stmt = $db->prepare($sql);
-                                $stmt->execute();
-                                $result = $stmt->fetchAll();
-                                foreach ($result as $item){
+                                $clienteController = new ClienteController();
+                               
+                                foreach ($clienteController->listarClientes() as $item){
 
                                 ?>
                                 <tr>
 
                                     <td><?php  echo $item['nome']?></td>
                                     <td><?php echo $item['telefone']?></td>
-                                    <td><?= $item['email'] ?>  </td>
-                                    <td><?= $item ['endereco']?></td>
-                                    <td>
-                                        <?php
-                                        if ($item['status'] == 'ativo') {
-                                            echo '<span class="badge bg-label-success me-1">Ativo</span>';
-                                        } else {
-                                            echo '<span class="badge bg-label-danger me-1">Inativo</span>';
-                                        }
-                                        ?>
+                                    <td><?= $item['data_nascimento'] ?>  </td>
+                                    <td><?= $item ['anamnese']?></td>
+                                    <td><?= $item ['queixa_principal']?></td>
 
-                                    </td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);"><i class='bx bx-low-vision'></i> Visualizar</a>
+                                                <a href="show.php?id_cliente=<?php  echo $item['id']?>"  class="dropdown-item" href="javascript:void(0);"><i class='bx bx-low-vision'></i> Visualizar</a>
                                                 <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Editar</a>
                                                 <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Excluir</a>
                                             </div>
