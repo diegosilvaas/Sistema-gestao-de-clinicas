@@ -21,10 +21,10 @@ require_once '../../app/Controller/ClienteController.php';
                 <!-- Navbar -->
 
                 <?php include_once '../../includes/navbar.php'; ?>
-                <?php 
+                <?php
                 $clienteController = new ClienteController();
                 $dadosCliente = $clienteController->visualizarCliente($_GET['id_cliente']);
-                
+
                 ?>
 
                 <div class="content-wrapper">
@@ -34,8 +34,8 @@ require_once '../../app/Controller/ClienteController.php';
                         <div class="row">
                             <div class="card mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h5 class="mb-0">Cadastrar novo cliente</h5>
-                                    <small class="text-muted float-end">Default label</small>
+                                    <h5 class="mb-0">VISUALIZANDO DADOS DA CLIENTE</h5>
+                                    <small class="text-muted float-end">Anamnese  <?php echo $dadosCliente->anamnese ?></small>
                                 </div>
 
                                 <!-- <form action="create.php" method="post">; -->
@@ -49,18 +49,18 @@ require_once '../../app/Controller/ClienteController.php';
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-phone">Data de nascimento</label>
-                                        <input name="data_nascimento" type="date" id="basic-default-phone" class="form-control phone-mask" placeholder="06 02 1996">
+                                        <input value="<?php echo $dadosCliente->data_nascimento ?>" disabled name="data_nascimento" type="date" id="basic-default-phone" class="form-control phone-mask" placeholder="06 02 1996">
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-company">telefone</label>
-                                        <input name="telefone" type="number" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->telefone ?>" disabled name="telefone" type="number" class="form-control" id="basic-default-company">
                                     </div>
 
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Queixa principal</label>
-                                        <input name="queixa_principal" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->queixa_principal ?>" disabled name="queixa_principal" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
@@ -68,7 +68,7 @@ require_once '../../app/Controller/ClienteController.php';
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Já realizou alguma cirurgia?</label>
-                                        <input name="realizou_cirurgia" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->realizou_cirurgia ?>" disabled name="realizou_cirurgia" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
@@ -76,328 +76,268 @@ require_once '../../app/Controller/ClienteController.php';
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Toma algum remédio? Qual?</label>
-                                        <input name="toma_remedio" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->toma_remedio ?>" disabled name="toma_remedio" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Toma anticoncepcional?</label>
-                                        <input name="toma_anticoncepcional" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->toma_anticoncepcional ?>" disabled name="toma_anticoncepcional" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Está fazendo algum tratamento médico?</label>
-                                        <input name="tratamento_medico" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->tratamento_medico ?>" disabled name="tratamento_medico" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Tem hipo/Hipertensão arterial?</label>
-                                        <input name="hipo_arterial" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->hipo_arterial ?>" disabled name="hipo_arterial" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui algum problema cardíaco?</label>
-                                        <input name="cardiaco" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->cardiaco ?>" disabled name="cardiaco" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui algum disturbio hormonal?</label>
-                                        <input name="disturbio_hormonal" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->disturbio_hormonal ?>" disabled name="disturbio_hormonal" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui algum disturbio circulatório?</label>
-                                        <input name="disturbio_circulatorio" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->disturbio_circulatorio ?>" disabled name="disturbio_circulatorio" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui alguma doença de pele?</label>
-                                        <input name="doenca_pele" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->doenca_pele ?>" disabled name="doenca_pele" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Ingere álcool? Com que frequência?</label>
-                                        <input name="ingere_alcool" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->ingere_alcool ?>" disabled name="ingere_alcool" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Diabetes?</label>
-                                        <input name="diabetes" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->diabetes ?>" disabled name="diabetes" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Gostaria de mencionar algum quadro de saude?</label>
-                                        <input name="quadro_saude" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->quadro_saude ?>" disabled name="quadro_saude" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Está gestante?</label>
-                                        <input name="gestante" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->gestante ?>" disabled name="gestante" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Pratica atividade fisica? Qual?</label>
-                                        <input name="atividade_fisica" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->atividade_fisica ?>" disabled name="atividade_fisica" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Alimentação balanceada?</label>
-                                        <input name="alimentacao_balanceada" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->alimentacao_balanceada ?>" disabled name="alimentacao_balanceada" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Ingestão diária de água?</label>
-                                        <input name="ingestao_agua" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->ingestao_agua ?>" disabled name="ingestao_agua" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Funcionamento intestinal? </label>
-                                        <input name="funcionamento_intestinal" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->funcionamento_intestinal ?>" disabled name="funcionamento_intestinal" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Ciclo mestrual?</label>
-                                        <input name="ciclo_mestrual" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->ciclo_mestrual ?>" disabled name="ciclo_mestrual" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui marcapasso?</label>
-                                        <input name="possui_marcapasso" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->possui_marcapasso ?>" disabled name="possui_marcapasso" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui varizes?</label>
-                                        <input name="possui_varizes" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->possui_varizes ?>" disabled name="possui_varizes" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Usa algum cosmético corporal/facial?</label>
-                                        <input name="cosmetico_corporal" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->cosmetico_corporal ?>" disabled name="cosmetico_corporal" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Histórico de epilepsia?</label>
-                                        <input name="epilepsia" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->epilepsia ?>" disabled name="epilepsia" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Cicatriz?</label>
-                                        <input name="cicatriz" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->cicatriz ?>" disabled name="cicatriz" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Já engravidou? Quantas vezes?</label>
-                                        <input name="engravidou" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->engravidou ?>" disabled name="engravidou" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Possui alguma protese metálica? </label>
-                                        <input name="protese_metalica" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->protese_metalica ?>" disabled name="protese_metalica" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">É fumante? </label>
-                                        <input name="fumante" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->fumante ?>" disabled name="fumante" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Já teve câncer? </label>
-                                        <input name="cancer" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->cancer ?>" disabled name="cancer" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Utiliza lentes de contato? </label>
-                                        <input name="lente_contato" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->lente_contato ?>" disabled name="lente_contato" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Fica exposta ao sol? </label>
-                                        <input name="exposicao_sol" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->exposicao_sol ?>" disabled name="exposicao_sol" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Utiliza filtro solar? </label>
-                                        <input name="filtro_solar" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->filtro_solar ?>" disabled name="filtro_solar" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label" for="basic-default-message">Está no período mestrual? </label>
-                                        <input name="periodo_mestrual" type="text" class="form-control" id="basic-default-company">
+                                        <input value="<?php echo $dadosCliente->periodo_mestrual ?>" disabled name="periodo_mestrual" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label" for="basic-default-message">Costuma dormir quantas horas por noite? </label>
-                                        <input name="sono" type="text" class="form-control" id="basic-default-company">
+                                        <label class="form-label" for="basic-default-message">Horas de sono </label>
+                                        <input value="<?php echo $dadosCliente->sono ?>" disabled name="sono" type="text" class="form-control" id="basic-default-company">
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Oleosidade da pele </label>
+                                        <input value="<?php echo $dadosCliente->oleosidade ?>" disabled name="oleosidade" type="text" class="form-control" id="basic-default-company">
+
+                                    </div>
+
+
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Espessura da pele </label>
+                                        <input value="<?php echo $dadosCliente->espessura_pele ?>" disabled name="espessura_pele" type="text" class="form-control" id="basic-default-company">
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Grau da acne </label>
+                                        <input value="GRAU <?php echo $dadosCliente->grau_acne ?>" disabled name="grau_acne" type="text" class="form-control" id="basic-default-company">
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Hidratação da pele </label>
+                                        <input value=" <?php echo $dadosCliente->hidratacao_pele ?>" disabled name="hidratacao_pele" type="text" class="form-control" id="basic-default-company">
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Fototipo </label>
+                                        <input value="FOTOTIPO <?php echo $dadosCliente->fototipo ?>" disabled name="fototipo" type="text" class="form-control" id="basic-default-company">
 
                                     </div>
 
 
 
 
-                                    <div class="col-md">
-                                        <h5 class="card-header">Oleosidade</h5>
-                                        <div class="form-check form-check-inline mt-3">
-                                            <input name="oleosidade" class="form-check-input" type="radio" id="aliptica" value="aliptica">
-                                            <label class="form-check-label" for="aliptica">Alípica</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input name="oleosidade" class="form-check-input" type="radio" id="lipidica" value="lipidica">
-                                            <label class="form-check-label" for="lipidica">Lipídica</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input name="oleosidade" class="form-check-input" type="radio" id="normal" value="normal">
-                                            <label class="form-check-label" for="normal">Normal</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input name="oleosidade" class="form-check-input" type="radio" id="seborreica" value="seborreica">
-                                            <label class="form-check-label" for="seborreica">Seborreica</label>
-                                        </div>
 
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Possui manchas? Onde? </label>
+                                        <input value="<?php echo $dadosCliente->manchas ?>" disabled name="manchas" type="text" class="form-control" id="basic-default-company">
 
-                                        <div class="col-md">
-                                            <h5 class="card-header">Espessura da pele</h5>
-                                            <div class="form-check form-check-inline mt-3">
-                                                <input name="espessura_pele" class="form-check-input" type="radio" id="espessa" value="espessa">
-                                                <label class="form-check-label" for="espessa">Espessa</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input name="espessura_pele" class="form-check-input" type="radio" id="fina" value="fina">
-                                                <label class="form-check-label" for="fina">Fina</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input name="espessura_pele" class="form-check-input" type="radio" id="muito_fina" value="muito fina">
-                                                <label class="form-check-label" for="muito_fina">Muito fina</label>
-                                            </div>
+                                    </div>
+
+                                    
 
 
 
-
-                                            <div class="col-md">
-                                                <h5 class="card-header">Grau de acne</h5>
-                                                <div class="form-check form-check-inline mt-3">
-                                                    <input name="grau_acne" class="form-check-input" type="radio" id="inlineCheckbox1" value="I">
-                                                    <label class="form-check-label" for="inlineCheckbox1">I</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input name="grau_acne" class="form-check-input" type="radio" id="inlineCheckbox2" value="II">
-                                                    <label class="form-check-label" for="inlineCheckbox2">II</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input name="grau_acne" class="form-check-input" type="radio" id="inlineCheckbox3" value="III">
-                                                    <label class="form-check-label" for="inlineCheckbox3">III</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input name="grau_acne" class="form-check-input" type="radio" id="inlineCheckbox4" value="IV">
-                                                    <label class="form-check-label" for="inlineCheckbox4">IV</label>
-                                                </div>
-
-
-                                                <div class="col-md">
-                                                    <h5 class="card-header">Hidratação</h5>
-                                                    <div class="form-check form-check-inline mt-3">
-                                                        <input name="hidratacao_pele" class="form-check-input" type="radio" id="desidradata" value="desidradatada">
-                                                        <label class="form-check-label" for="desidradata">Desidratada</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input name="hidratacao_pele" class="form-check-input" type="radio" id="normal" value="normal">
-                                                        <label class="form-check-label" for="normal">Normal</label>
-                                                    </div>
+                                    <div>
+                                    
+                                        <label for="exampleFormControlTextarea1" class="form-label">Orientações à paciente</label>
+                                        <input value="<?php echo $dadosCliente->orientacoes ?>" disabled  name="orientacoes" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        
+                                        
+                                    </div>
 
 
 
+                            
 
-                                                    <div class="col-md">
-                                                        <h5 class="card-header">Fototipo</h5>
-                                                        <div class="form-check form-check-inline mt-3">
-                                                            <input name="fototipo" class="form-check-input" type="radio" id="tipo1" value="I">
-                                                            <label class="form-check-label" for="tipo1">I</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="fototipo" class="form-check-input" type="radio" id="tipo2" value="II">
-                                                            <label class="form-check-label" for="tipo2">II</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="fototipo" class="form-check-input" type="radio" id="tipo3" value="III">
-                                                            <label class="form-check-label" for="tipo3">III</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="fototipo" class="form-check-input" type="radio" id="tipo4" value="IV">
-                                                            <label class="form-check-label" for="tipo4">IV</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="fototipo" class="form-check-input" type="radio" id="tipo5" value="V">
-                                                            <label class="form-check-label" for="tipo5">V</label>
-                                                        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-default-message">Anamnese </label>
+                                        <input value="anamnese <?php echo $dadosCliente->anamnese ?>" disabled name="anamnese" type="text" class="form-control" id="basic-default-company">
 
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="basic-default-message">Possui manchas? Onde? </label>
-                                                            <input name="manchas" type="text" class="form-control" id="basic-default-company">
+                                    </div>
 
-                                                        </div>
+                                    <form>
+                                        <input type="button" class="btn mb-3 btn-primary" value="Voltar" onClick="JavaScript: window.history.back();">
+                                    </form>
 
 
 
-                                                        <div>
-                                                            <label for="exampleFormControlTextarea1" class="form-label">Orientações à paciente</label>
-                                                            <textarea name="orientacoes" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                                        </div>
+                                    <?php include_once '../../includes/footer.php'; ?>
 
+                                    <div class="layout-overlay layout-menu-toggle"></div>
+                                </div>
 
+                                <?php include_once '../../includes/script.php'; ?>
 
-                                                        <div class="mb-3">
-                                                            <label for="exampleFormControlSelect1" class="form-label">Anamnese</label>
-                                                            <select name='anamnese' class="form-select" id="exampleFormControlSelect1">
-
-                                                                <option value="Corporal">Corporal</option>
-                                                                <option value="Facial">Facial</option> <!--  forçando ficar selecionado -->//
-
-
-                                                            </select>
-                                                        </div>
-
-                                                        <form>
-                                                            <input type="button" class="btn mb-3 btn-primary" value="Voltar" onClick="JavaScript: window.history.back();">
-                                                        </form>
-
-
-
-                                                        <?php include_once '../../includes/footer.php'; ?>
-
-                                                        <div class="layout-overlay layout-menu-toggle"></div>
-                                                    </div>
-
-                                                    <?php include_once '../../includes/script.php'; ?>
-
-                                                    <!-- Core JS -->
+                                <!-- Core JS -->
 </body>
 
 </html>
