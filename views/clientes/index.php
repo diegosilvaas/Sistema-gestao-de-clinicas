@@ -84,7 +84,7 @@ require_once '../../app/Controller/ClienteController.php';
                                             </button>
                                             <div class="dropdown-menu">
                                                 <a href="show.php?id_cliente=<?php  echo $item['id']?>"  class="dropdown-item" href="javascript:void(0);"><i class='bx bx-low-vision'></i> Visualizar</a>
-                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Editar</a>
+                                                <a href="show.php?id_cliente=<?php  echo $item['id']?>" class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Editar</a>
                                                 <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Excluir</a>
                                             </div>
                                         </div>
