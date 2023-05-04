@@ -3,6 +3,9 @@
 <?php
 require_once '../../app/Controller/ClienteController.php';
 require_once '../../app/Model/Cliente.php';
+
+
+
 ?>
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
 <?php include_once '../../includes/head.php'; ?>
@@ -43,7 +46,7 @@ require_once '../../app/Model/Cliente.php';
 
                                         <div class="mb-3">
                                             <label class="form-label" for="basic-default-phone">Data de nascimento</label>
-                                            <input name="data_nascimento" type="number" id="basic-default-phone" class="form-control phone-mask" placeholder="06 02 1996">
+                                            <input name="data_nascimento" type="date" id="basic-default-phone" class="form-control phone-mask" placeholder="06 02 1996">
                                         </div>
 
                                         <div class="mb-3">
@@ -165,8 +168,8 @@ require_once '../../app/Model/Cliente.php';
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="basic-default-message">Periodo mestrual?</label>
-                                            <input name="periodo_mestrual" type="text" class="form-control" id="basic-default-company">
+                                            <label class="form-label" for="basic-default-message">Ciclo mestrual?</label>
+                                            <input name="ciclo_mestrual" type="text" class="form-control" id="basic-default-company">
 
                                         </div>
 
@@ -244,7 +247,7 @@ require_once '../../app/Model/Cliente.php';
 
                                         <div class="mb-3">
                                             <label class="form-label" for="basic-default-message">Está no período mestrual? </label>
-                                            <input name="perido_mestrual" type="text" class="form-control" id="basic-default-company">
+                                            <input name="periodo_mestrual" type="text" class="form-control" id="basic-default-company">
 
                                         </div>
 
@@ -371,8 +374,8 @@ require_once '../../app/Model/Cliente.php';
                                                                 <label for="exampleFormControlSelect1" class="form-label">Anamnese</label>
                                                                 <select name='anamnese' class="form-select" id="exampleFormControlSelect1">
 
-                                                                    <option value="inativo">Corporal</option>
-                                                                    <option selected value="ativo">Facial</option> <!--  forçando ficar selecionado -->//
+                                                                    <option value="Corporal">Corporal</option>
+                                                                    <option value="Facial">Facial</option> <!--  forçando ficar selecionado -->//
 
 
                                                                 </select>
@@ -382,14 +385,14 @@ require_once '../../app/Model/Cliente.php';
                                     </form>
                                     <?php
                                    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-                                    $clienteController = new ClienteController(new Cliente());
+                                    $clienteController = new ClienteController();
                                     
                                     if ($clienteController->armazenar()){
                                       echo 'SALVO COM SUCESSO   ';
-                                    } else {
-                                        echo ' ERRRRRRRRO';
+                                    } 
+                                    
                                     }
-                                   } 
+                                   
 
 
                                     ?>
