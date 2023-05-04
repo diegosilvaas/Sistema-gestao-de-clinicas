@@ -92,4 +92,10 @@ class ClienteController
         return $this->clienteRepository->visualizarCliente($id);
 
     }
+
+    public function editarCliente($id)
+    {
+        return $this->clienteRepository->editarCliente($id);
+
+    }
 }
