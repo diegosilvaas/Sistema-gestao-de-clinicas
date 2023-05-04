@@ -33,20 +33,16 @@
                     <div class="card">
 
                         <h5 class="card-header" >
-                            <a href="create.php" class="btn btn-success btn-sm" title="registrar conta a pagar"><i class="bx bx-plus-medical"></i></a>
-                            REGISTRAR CONTA</h5>
+                            <a href="create.php" class="btn btn-success btn-sm" title="cadastrar novo produto"><i class="bx bx-plus-medical"></i></a>
+                            Cadastrar produto</h5>
                         <div class="table-responsive text-nowrap">
                             <table class="table table-dark">
                                 <thead>
                                 <tr>
-                                    <th>Vencimento</th>
-                                    <th>Cliente</th>
+                                    <th>nome</th>
                                     <th>descricao</th>
-                                    <th>Forma de pagamento</th>
-                                    <th>Valor</th>
-                                    <th>Pago</th>
-                                    <th>Restante</th>
-                                    <th>Status</th>
+                                    <th>quantidade</th>
+                                    <th>valor</th>
 
                                 </tr>
                                 </thead>

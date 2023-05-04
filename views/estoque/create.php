@@ -37,45 +37,40 @@
                    <div class="row">
                        <div class="card mb-4">
                            <div class="card-header d-flex justify-content-between align-items-center">
-                               <h5 class="mb-0">Agendar novo horário</h5>
+                               <h5 class="mb-0">Cadastrar novo produto</h5>
                                <small class="text-muted float-end">Default label</small>
                            </div>
                            <div class="card-body">
                                <form method="post">
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-fullname">Nome</label>
+                                       <label class="form-label" for="basic-default-fullname">nome</label>
                                        <input name="nome" type="text" class="form-control" id="basic-default-fullname">
                                    </div>
 
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-phone">telefone</label>
-                                       <input name="telefone" type="tel" id="basic-default-phone" class="form-control phone-mask" placeholder="658 799 8941">
+                                       <label class="form-label" for="basic-default-phone">descricao</label>
+                                       <input name="descrição" type="text" id="basic-default-phone" class="form-control phone-mask" placeholder="coca 2 lts">
                                    </div>
 
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-fullname">Data</label>
-                                       <input name="data" type="date" class="form-control" id="basic-default-fullname">
-                                   </div>
-
-                                   <div class="mb-3">
-                                       <label class="form-label" for="basic-default-fullname">Hora</label>
-                                       <input name="hora" type="time" class="form-control" id="basic-default-fullname">
+                                       <label class="form-label" for="basic-default-company">quantidade</label>
+                                       <input name="quantidade" type="number" class="form-control" id="basic-default-company">
                                    </div>
 
 
                                    <div class="mb-3">
-                                       <label class="form-label" for="basic-default-message">Procedimento</label>
-                                       <input name="procedimento" type="text" class="form-control" id="basic-default-company">
+                                       <label class="form-label" for="basic-default-message">valor</label>
+                                       <input name="valor" type="number" class="form-control" id="basic-default-company">
 
                                    </div>
 
                                    <div class="mb-3">
-                                       <label for="exampleFormControlSelect1" class="form-label">Situação</label>
-                                       <select name='situacao' class="form-select" id="exampleFormControlSelect1">
+                                       <label for="exampleFormControlSelect1" class="form-label">status</label>
+                                       <select name="status" class="form-select" id="exampleFormControlSelect1">
 
-                                           <option value="inativo">Confirmado</option>
-                                           <option selected value="ativo">Pendente de confirmação</option>  <!--  forçando ficar selecionado -->//
-                                           <option value="inativo">Desmarcado</option>
+                                           <option value="inativo">inativo</option>
+                                           <option selected value="ativo">ativo</option>  <!--  forçando ficar selecionado -->//
+
 
                                        </select>
                                    </div>
@@ -85,21 +80,21 @@
                                <?php
                                if(isset($_POST['btncadastrar'])) {
                                    $name = $_POST['nome'];
-                                   $telephone = $_POST['telefone'];
-                                   $email = $_POST['email'];
-                                   $address = $_POST['endereco'];
+                                   $description = $_POST['descricao'];
+                                   $amount = $_POST['quantidade'];
+                                   $value = $_POST['valor'];
                                    $status = $_POST['status'];
 
 
                                    $db = new PDO("mysql:dbname=sistemadeproduto;host=localhost", 'root', '');
-                                   $sql = "insert into fornecedores (nome, telefone, email, endereco, status) values ('$name', $telephone, '$email', '$address', '$status')";
+                                   $sql = "insert into produto_estoque (nome, descricao, quantidade, valor, status) values ('$name', '$description', $amount, $value, '$status')";
                                    $stmt = $db->prepare($sql);
 
                                    if ($stmt->execute()) {
-                                       echo 'fornecedor cadastrado com sucesso';
+                                       echo 'Produto cadastrado com sucesso';
 
                                    } else {
-                                       echo 'Erro ao cadastrar fornecedor';
+                                       echo 'Erro ao cadastrar produto';
                                    }
 
 

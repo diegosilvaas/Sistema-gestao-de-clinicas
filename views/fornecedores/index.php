@@ -33,27 +33,24 @@
                     <div class="card">
 
                         <h5 class="card-header" >
-                            <a href="create.php" class="btn btn-success btn-sm" title="registrar conta a pagar"><i class="bx bx-plus-medical"></i></a>
-                            REGISTRAR CONTA</h5>
+                            <a href="create.php" class="btn btn-success btn-sm" title="Clientes cadastradas"><i class="bx bx-plus-medical"></i></a>
+                            AGENDAR CLIENTE</h5>
                         <div class="table-responsive text-nowrap">
                             <table class="table table-dark">
                                 <thead>
                                 <tr>
-                                    <th>Vencimento</th>
-                                    <th>Cliente</th>
-                                    <th>descricao</th>
-                                    <th>Forma de pagamento</th>
-                                    <th>Valor</th>
-                                    <th>Pago</th>
-                                    <th>Restante</th>
-                                    <th>Status</th>
-
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                    <th>Data</th>
+                                    <th>Hora</th>
+                                    <th>Procedimento</th>
+                                    <th>Situacao</th>
                                 </tr>
                                 </thead>
                                 <tbody class="table-border-bottom-0">
                                 <?php
                                 $db = new PDO("mysql:dbname=sistemadeproduto;host=localhost", 'root', '');
-                                $sql = 'select * from produto_estoque';
+                                $sql = 'select * from fornecedores';
                                 $stmt = $db->prepare($sql);
                                 $stmt->execute();
                                 $result = $stmt->fetchAll();
@@ -63,9 +60,9 @@
                                 <tr>
 
                                     <td><?php  echo $item['nome']?></td>
-                                    <td><?php echo $item['descricao']?></td>
-                                    <td><?= $item['quantidade'] ?>  </td>
-                                    <td><?= $item ['valor']?></td>
+                                    <td><?php echo $item['telefone']?></td>
+                                    <td><?= $item['email'] ?>  </td>
+                                    <td><?= $item ['endereco']?></td>
                                     <td>
                                         <?php
                                         if ($item['status'] == 'ativo') {

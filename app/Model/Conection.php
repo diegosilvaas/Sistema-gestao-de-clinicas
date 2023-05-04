@@ -25,6 +25,9 @@ class Conection {
 
     public static function getDb ()
     {
+        if (!self::$db) {
+            new Conection();
+        }
         return self::$db;
 
     }
