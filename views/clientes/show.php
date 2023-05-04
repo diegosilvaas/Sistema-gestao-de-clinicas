@@ -21,6 +21,11 @@ require_once '../../app/Controller/ClienteController.php';
                 <!-- Navbar -->
 
                 <?php include_once '../../includes/navbar.php'; ?>
+                <?php 
+                $clienteController = new ClienteController();
+                $dadosCliente = $clienteController->visualizarCliente($_GET['id_cliente']);
+                
+                ?>
 
                 <div class="content-wrapper">
                     <!-- Content -->
@@ -38,7 +43,7 @@ require_once '../../app/Controller/ClienteController.php';
                                     <form action="create.php" method="post">
                                         <div class="mb-3">
                                             <label class="form-label" for="basic-default-fullname">Nome</label>
-                                            <input name="nome" type="text" class="form-control" id="basic-default-fullname">
+                                            <input value="<?php echo $dadosCliente->nome ?>" disabled name="nome" type="text" class="form-control" id="basic-default-fullname">
                                         </div>
                                     </form>
 
