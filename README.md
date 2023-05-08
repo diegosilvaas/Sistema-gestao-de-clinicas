@@ -13,9 +13,9 @@
 #### ● Preenchimento de protocolos: permite que os usuários preencham protocolos com questionamentos padrão para cada consulta.
 
 ## Tecnologias Utilizadas
-#### PHP
-#### Bootstrap
-#### MySQL
+#### ● PHP
+#### ● Bootstrap
+#### ● MySQL
 
 ## Como executar o projeto
 1. Clone o repositório para o seu computador.
