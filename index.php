@@ -58,8 +58,8 @@ require_once 'Config.php';
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <span class="fw-semibold d-block">John Doe</span>
-                          <small class="text-muted">Admin</small>
+                          <span class="fw-semibold d-block">Gabriela Souza</span>
+                          <small class="text-muted">Esteticista</small>
                         </div>
                       </div>
                     </a>
@@ -70,20 +70,20 @@ require_once 'Config.php';
                   <li>
                     <a class="dropdown-item" href="#">
                       <i class="bx bx-user me-2"></i>
-                      <span class="align-middle">My Profile</span>
+                      <span class="align-middle">Meu perfil</span>
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
                       <i class="bx bx-cog me-2"></i>
-                      <span class="align-middle">Settings</span>
+                      <span class="align-middle">Configurações</span>
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="#"> 
                       <span class="d-flex align-items-center align-middle">
                         <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                        <span class="flex-grow-1 align-middle">Billing</span>
+                        <span class="flex-grow-1 align-middle">Cobrança</span>
                         <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
                       </span>
                     </a>
@@ -94,7 +94,7 @@ require_once 'Config.php';
                   <li>
                     <a class="dropdown-item" href="auth-login-basic.html">
                       <i class="bx bx-power-off me-2"></i>
-                      <span class="align-middle">Log Out</span>
+                      <span class="align-middle">Sair</span>
                     </a>
                   </li>
                 </ul>
