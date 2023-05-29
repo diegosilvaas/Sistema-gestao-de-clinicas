@@ -1,5 +1,6 @@
 <h1 align="center"> Sistema de Gestão de Clínica de Estética </h1> 
 
+![logo gabi](https://github.com/diegosilvaas/Sistema-gestao-de-clinicas/assets/122392637/bf0ddef9-e699-44e5-9c87-918df165bd2f)
 
 
 ## Descrição do projeto
