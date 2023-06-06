@@ -123,7 +123,7 @@ require_once 'Config.php';
                           <th>Cliente</th>
                           <th>Procedimento</th>
                           <th>Esteticista </th>
-                          <th>DIa / Horário</th>
+                          <th>Dia / Horário</th>
                           <th>Ações</th>
                         </tr>
                       </thead>
